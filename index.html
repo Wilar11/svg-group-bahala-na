@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG ACTIVITY</title>
+</head>
+<body>
+     <h1 style="text-align: center;">---Using SVG & Progress Element---</h1> 
+     <hr width="99%"/>
+     <h2 style="text-align: center;"><em> Created Shape </em></h2>
+
+    <div style="display: flex; justify-content: center; align-items: center;"> 
+        <svg width="350" height="350"> 
+            <polyline points="0,180 60,90 120,165 180,60 240,135 300,180 360,210 0,210 0,180" 
+            fill="#e3ffe2" stroke="black" stroke-width="2" /> 
+        </svg>
+    </div>
+
+     <hr width="90%"/>
+    <h2 style="text-align: center;"><em> Learning Progress</em></h2>
+    <div style="display: flex; flex-direction: column; align-items: center; margin: 0 auto; text-align: center;">
+  
+  <p>HTML Progress:</p>
+  <progress min="0" value="54" max="100"></progress>
+  <span>54%</span>
+
+  <p>Java Progress:</p>
+  <progress min="0" value="49" max="100"></progress>
+  <span>49%</span>
+
+  <p>CSS Progress:</p>
+  <progress min="0" value="10" max="100"></progress>
+  <span>10%</span>
+
+  <p>Javascript Progress:</p>
+  <progress min="0" value="0" max="100"></progress>
+  <span>0%</span>
+</div>
+<hr width="90%"/>
+
+<h2 style="text-align: center;"><em> Input Section</em></h2>
+
+<div style="display:flex; flex-direction: column; align-items: center;margin:0 auto; text align: center;">
+<label for="tools">Select Your Favorite Web Tool:</label>
+<input Id="tools" Type="text" List="web tools" /> 
+ <DATALIST ID="web tools"> 
+    <OPTION VALUE="Visual Studio Code"> 
+    <OPTION VALUE="GitHub"> 
+    <OPTION VALUE="Bootstrap"> 
+    <OPTION VALUE="Figma">
+    <OPTION VALUE="SPCK Code Editor">
+</DATALIST>
+</div>
+</body>
+</html>
