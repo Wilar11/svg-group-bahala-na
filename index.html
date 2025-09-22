@@ -4,12 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVG ACTIVITY</title>
+    <style>
+        html{ 
+            scroll-behavior: smooth;
+        }
+        
+        body{
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+             background-image:
+              linear-gradient(#d5e0eb 1px, transparent 1px),
+              linear-gradient(90deg, #d5e0eb 1px, transparent 1px);
+              background-size: 25px 25px;
+             }
+            nav {
+                 position: sticky;
+                 top: 0;
+                 background: #ffffffcc;
+                 backdrop-filter: blur(10px);
+                 border-radius: 20px;
+                 box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                 display: flex;
+                 gap: 20px;
+                 padding: 10px 20px;
+                 margin-bottom: 20px;
+                 z-index: 100;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #222;
+                font-weight: bold;
+                padding: 8px 16px;
+                border-radius: 6px;
+                transition: color 0.3s, background 0.3s;
+            }
+
+            nav a:hover {
+                color: #fff;
+                background: #0077cc;
+            }
+
+    </style>
 </head>
-<body style="background-color: #e6dac8;">
-     <h1 style="text-align: center;">---Using SVG & Progress Element---</h1> 
+<body style="background-color: #d9f3f4;">
+     <h1 style="text-align: center;">₊✩‧₊˚౨ৎ˚₊✩‧₊Using SVG & Progress Element₊✩‧₊˚౨ৎ˚₊✩‧₊</h1> 
      <hr width="99%"/>
-     <h2 style="text-align: center;"><em> Created Shapes </em></h2>
-    <div style="display: flex; justify-content: center; align-items: flex-start;">
+      
+     <nav>
+       <a href="#Shapes">Shapes</a>
+       <a href="#Progress">Learning Progress</a>
+       <a href="#Input Section">Input Section</a>
+       <a href=" #Contact Us">Contact Us</a>
+     </nav>
+
+
+     <h2 style="text-align: center;"><em> Created Shapesᯓ★ </em></h2>
+    <div style="display: flex; justify-content: center; align-items: flex-start;" id="Shapes">
         <div>
             <svg width="350" height="350"> 
                 <polyline points="0,180 60,90 120,165 180,60 240,135 300,180 360,210 0,210 0,180" 
@@ -22,9 +73,9 @@
             </svg>
         </div>
     </div>
-    <hr width="90%"/>
-    <h2 style="text-align: center;"><em> Learning Progress</em></h2>
-    <div style="display: flex; flex-direction: column; align-items: center; margin: 0 auto; text-align: center;">
+<hr width="90%"/>
+    <h2 style="text-align: center;"><em> Learning Progress ₊˚⊹ ᰔ</em></h2>
+    <div style="display: flex; flex-direction: column; align-items: center; margin: 0 auto; text-align: center;" id="Progress">
   
   <p>HTML Progress:</p>
   <progress min="0" value="54" max="100"></progress>
@@ -43,9 +94,8 @@
   <span>0%</span>
 </div>
 <hr width="90%"/>
-
-<h2 style="text-align: center;"><em> Input Section</em></h2>
-<div style="display:flex; flex-direction: column; align-items: center; margin:0 auto; text-align: center;">
+<h2 style="text-align: center;"><em> Input Section ⋆˙⟡</em></h2>
+<div style="display:flex; flex-direction: column; align-items: center; margin:0 auto; text-align: center;" id="Input Section">
 <label for="tools">Select Your Favorite Web Tool:</label>
 <input Id="tools" Type="text" List="web tools" /> 
  <DATALIST ID="web tools"> 
@@ -58,8 +108,8 @@
 </div>
 
 <hr width="90%"/>
-
-<h2 style="text-align: center;"><em>Contact Us:</em></h2>
+<h2 style="text-align: center;"><em> ☎︎₊˚✧Contact Us:</em></h2>
+<div id="Contact Us"
 <form align="center">
         <label for="name">NAME:</label></br>  
         <input type="text" name="name" required autofocus placeholder="Last Name, First Name"></br>
@@ -72,9 +122,10 @@
 	  	<textarea name="message"></textarea></br>
 	  	<input type="submit" value="send" class="submit"/>
 </form>
+</div>
 
 <footer style="text-align: center">
-<p> Made by: Group Bahala Na.</p>
+<p> Made by: Group Bahala Na. (Dayag, Arwildan A.)💕❣️</p> 
 </footer>
 </body>
 </html>
