@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVG ACTIVITY</title>
 </head>
-<body>
+<body style="background-color: #e6dac8;">
      <h1 style="text-align: center;">---Using SVG & Progress Element---</h1> 
      <hr width="99%"/>
-     <h2 style="text-align: center;"><em> Created Shape </em></h2>
-
-    <div style="display: flex; justify-content: center; align-items: center;"> 
-        <svg width="350" height="350"> 
-            <polyline points="0,180 60,90 120,165 180,60 240,135 300,180 360,210 0,210 0,180" 
-            fill="#e3ffe2" stroke="black" stroke-width="2" /> 
-        </svg>
+     <h2 style="text-align: center;"><em> Created Shapes </em></h2>
+    <div style="display: flex; justify-content: center; align-items: flex-start;">
+        <div>
+            <svg width="350" height="350"> 
+                <polyline points="0,180 60,90 120,165 180,60 240,135 300,180 360,210 0,210 0,180" 
+                fill="#e3ffe2" stroke="black" stroke-width="2" /> 
+            </svg>
+        </div>
+        <div style="margin-left: 20px;">
+            <svg width="150" height="150">
+                <circle cx="75" cy="75" r="60" fill="#fffacb" stroke="black" stroke-width="2"/>
+            </svg>
+        </div>
     </div>
-
-     <hr width="90%"/>
+    <hr width="90%"/>
     <h2 style="text-align: center;"><em> Learning Progress</em></h2>
     <div style="display: flex; flex-direction: column; align-items: center; margin: 0 auto; text-align: center;">
   
@@ -40,8 +45,7 @@
 <hr width="90%"/>
 
 <h2 style="text-align: center;"><em> Input Section</em></h2>
-
-<div style="display:flex; flex-direction: column; align-items: center;margin:0 auto; text align: center;">
+<div style="display:flex; flex-direction: column; align-items: center; margin:0 auto; text-align: center;">
 <label for="tools">Select Your Favorite Web Tool:</label>
 <input Id="tools" Type="text" List="web tools" /> 
  <DATALIST ID="web tools"> 
@@ -52,5 +56,25 @@
     <OPTION VALUE="SPCK Code Editor">
 </DATALIST>
 </div>
+
+<hr width="90%"/>
+
+<h2 style="text-align: center;"><em>Contact Us:</em></h2>
+<form align="center">
+        <label for="name">NAME:</label></br>  
+        <input type="text" name="name" required autofocus placeholder="Last Name, First Name"></br>
+	  	<label for="email">EMAIL ADRESS:</label></br>
+	  	<input type="text" name="email" required placeholder="email@example.com"></br>
+	  	</span>
+	  	<label for="phone number">PHONE NUMBER:</label></br>
+        <input name="phone number" type="tel" required placeholder="e.g. 09123456789"></br>
+	  	<label>MESSAGE:</label></br>
+	  	<textarea name="message"></textarea></br>
+	  	<input type="submit" value="send" class="submit"/>
+</form>
+
+<footer style="text-align: center">
+<p> Made by: Group Bahala Na.</p>
+</footer>
 </body>
 </html>
